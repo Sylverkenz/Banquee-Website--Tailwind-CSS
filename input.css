@@ -1,0 +1,246 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: 62.5%;
+}
+
+.background {
+  background-image: radial-gradient(circle, #5bb5a2, #e8f2ee);
+  transition: all 0.3s ease-in-out;
+}
+
+.navigation {
+  transform: translate(-50%, -100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.check:checked ~ .background {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(60);
+}
+
+.check:checked ~ .menu .line1 {
+  opacity: 0;
+}
+
+.check:checked ~ .menu .line2 {
+  transform: rotate(45deg) translate(3px, 3.75px);
+}
+
+.check:checked ~ .menu .line3 {
+  transform: rotate(-45deg) translate(-1px, 1px);
+}
+
+.check:checked ~ .navigation {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%);
+}
+
+.checkbox:checked ~ .heading .plus {
+  transform: rotate(135deg);
+  transform-origin: 50% 50% 0;
+}
+
+.checkbox:checked ~ .content {
+  display: block;
+}
+
+.checkbox1:checked ~ .heading .plus {
+  transform: rotate(135deg);
+  transform-origin: 50% 50% 0;
+}
+
+.checkbox1:checked ~ .content {
+  display: block;
+}
+
+.checkbox2:checked ~ .heading .plus {
+  transform: rotate(135deg);
+  transform-origin: 50% 50% 0;
+}
+
+.checkbox2:checked ~ .content {
+  display: block;
+}
+.checkbox3:checked ~ .heading .plus {
+  transform: rotate(135deg);
+  transform-origin: 50% 50% 0;
+}
+
+.checkbox3:checked ~ .content {
+  display: block;
+}
+
+.checkbox4:checked ~ .heading .plus {
+  transform: rotate(135deg);
+  transform-origin: 50% 50% 0;
+}
+
+.checkbox4:checked ~ .content {
+  display: block;
+}
+
+.section {
+  transition: all 0.8s ease-in-out;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(20rem);
+}
+
+.hero-text-content {
+  animation: fromleft 1s ease-in-out;
+}
+
+.hero-img {
+  animation: fromright 1s ease-in-out;
+}
+
+.hero-imgs {
+  animation: fromright--m 1s ease-in-out;
+}
+
+h2 {
+  transition: all 0.2s;
+}
+
+h2:hover {
+  transform: scale(1.05);
+}
+
+.tab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  padding: 1.6rem 2.4rem;
+  border-radius: 0.6rem 0.6rem 0 0;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.tab--active {
+  padding: 1.6rem 6rem;
+  background-color: white;
+  color: #5bb5a2;
+  border-top: 2px solid #5bb5a2;
+  border-inline: 2px solid #5bb5a2;
+}
+
+.tab__content {
+  display: none;
+  animation: fromright--m 0.5s;
+}
+
+.tab__content > :first-child {
+  border-top: none;
+}
+
+.tab__content--active {
+  display: block;
+}
+
+.tabs__container {
+  animation: fromleft--m 1s ease-in-out 1s;
+}
+
+.dots--active {
+  color: orangered;
+}
+
+.user:placeholder-shown + .user-id {
+  transform: translateY(-4rem);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.pass:placeholder-shown + .password {
+  transform: translateY(-4rem);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.login:target .login__content {
+  transform: scale(1.05);
+}
+
+.account:target .account__content {
+  transform: scale(1.05);
+}
+
+.articles {
+  animation: fadeIn 1s, fromright--m 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fromleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20rem);
+  }
+
+  80% {
+    opacity: 0.8;
+    transform: translateX(4rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
+
+@keyframes fromright {
+  0% {
+    opacity: 0;
+    transform: translateX(20rem);
+  }
+
+  80% {
+    opacity: 0.8;
+    transform: translateX(-4rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
+
+@keyframes fromright--m {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
+
+@keyframes fromleft--m {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}

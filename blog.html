@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/cdb61a6f94.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
+    <title>Banquee | More Than Banking - Blog</title>
+  </head>
+  <body class="">
+    <header
+      class="flex items-center justify-between py-4 px-12 lg:px-40 fixed bg-white-opaq w-full z-10"
+    >
+      <p class="logo logotext text-bg-primary mr-auto">banquee</p>
+      <div class="nav">
+        <input type="checkbox" name="check" id="check" class="check hidden" />
+        <label
+          for="check"
+          class="menu px-[1.3rem] py-6 w-[5rem] h-[5rem] text-xl text-bg-primary fixed top-4 right-12 z-40 bg-bg-secondary rounded-full lg:hidden"
+        >
+          <span
+            class="line1 block w-10 h-1.5 bg-bg-primary duration-500"
+          ></span>
+          <span
+            class="line2 block w-10 h-1.5 bg-bg-primary translate-y-1.5 duration-500"
+          ></span>
+          <span
+            class="line3 block w-10 h-1.5 bg-bg-primary translate-y-3 duration-500"
+          ></span>
+        </label>
+        <div
+          class="background w-[5rem] h-[5rem] fixed top-0 left-[46%] z-30 opacity-0 invisible rounded-full"
+        ></div>
+        <nav
+          class="navigation flex flex-col gap-[3.2rem] fixed top-[50%] left-[50%] text-center lg:flex-row lg:justify-between lg:relative z-50 opacity-0 invisible lg:w-[80rem] xl:w-[85rem] lg:opacity-100 lg:visible lg:top-[5.5rem] lg:right-0 lg:items-center"
+        >
+          <ul
+            class="primary-navigation flex flex-col lg:flex-row gap-[2rem] lg:gap-[1.6rem] lg:items-center"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="header-link inline-block body-d uppercase lg:capitalize py-[0.8rem] px-[1.2rem]"
+                >home</a
+              >
+            </li>
+            <li>
+              <a
+                href="features.html"
+                class="header-link inline-block body-d uppercase lg:capitalize py-[0.8rem] px-[1.2rem]"
+                >features</a
+              >
+            </li>
+            <li>
+              <a
+                href="cards.html"
+                class="header-link inline-block body-d uppercase lg:capitalize py-[0.8rem] px-[1.2rem]"
+                >compare</a
+              >
+            </li>
+            <li>
+              <a
+                href="support.html"
+                class="header-link inline-block body-d uppercase lg:capitalize py-[0.8rem] px-[1.2rem]"
+                >support</a
+              >
+            </li>
+            <li>
+              <a
+                href="blog.html"
+                class="header-link inline-block body-d uppercase lg:capitalize py-[0.8rem] px-[1.2rem]"
+                >blog</a
+              >
+            </li>
+          </ul>
+          <ul
+            class="secondary-navigation flex flex-col gap-[2rem] lg:gap-[3.2rem] lg:flex-row lg:items-center"
+          >
+            <li>
+              <a
+                href="index.html#login"
+                class="header-link inline-block btn-text uppercase lg:capitalize py-[0.8rem] px-[1.2rem]"
+                >login</a
+              >
+            </li>
+            <li>
+              <a href="index.html#account" class="btn-small btn-text btn--green"
+                >open account</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section
+      class="hero-imgs section section-blog px-6 py-[5rem] lg:px-[10rem] xl:px-[15rem]"
+    >
+      <div>
+        <div class="text-center py-[10rem]">
+          <h1 class="heading-1 lg:text-8xl font-DM mb-[1.6rem]">Blog</h1>
+        </div>
+        <div class="label-container flex flex-wrap gap-8 py-24">
+          <p class="heading-6">Categories</p>
+          <p class="label label--b body-label cursor-pointer" data-id="all">
+            all
+          </p>
+        </div>
+        <div
+          class="articles-container grid gap-[3.2rem] sm:grid-cols-2 lg:grid-cols-3"
+        ></div>
+      </div>
+    </section>
+
+    <footer
+      class="section section--hidden footer py-[5rem] px-12 lg:px-[10rem] xl:px-56 flex flex-col gap-16 lg:gap-32 bg-white border-t"
+    >
+      <div
+        class="flex flex-col gap-12 items-center text-center justify-center md:text-left md:flex-row md:justify-between md:items-start"
+      >
+        <p class="logo logotext text-bg-primary">banquee</p>
+        <div>
+          <h6 class="heading-6 capitalize text-clr-text-default mb-[3.2rem]">
+            about
+          </h6>
+          <ul class="flex flex-col gap-[1.6rem]">
+            <li>
+              <a
+                href=""
+                class="body-d capitalize opacity-50 text-clr-text-default"
+                >features</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="body-d capitalize opacity-50 text-clr-text-default"
+                >pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="body-d capitalize opacity-50 text-clr-text-default"
+                >support</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h6 class="heading-6 capitalize text-clr-text-default mb-[3.2rem]">
+            blog
+          </h6>
+          <ul class="flex flex-col gap-[1.6rem]">
+            <li>
+              <a
+                href=""
+                class="body-d capitalize opacity-50 text-clr-text-default"
+                >products</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="body-d capitalize opacity-50 text-clr-text-default"
+                >technology</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="body-d capitalize opacity-50 text-clr-text-default"
+                >crypto</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h6 class="heading-6 capitalize text-clr-text-default mb-[3.2rem]">
+            webflow
+          </h6>
+          <ul class="flex flex-col gap-[1.6rem]">
+            <li>
+              <a
+                href=""
+                class="body-d capitalize opacity-50 text-clr-text-default"
+                >styleguide</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="body-d capitalize opacity-50 text-clr-text-default"
+                >licensing</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="body-d capitalize opacity-50 text-clr-text-default"
+                >changelog</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h6 class="heading-6 capitalize text-clr-text-default mb-[3.2rem]">
+            social media
+          </h6>
+          <ul class="flex flex-col gap-[1.6rem]">
+            <li>
+              <a
+                href=""
+                class="body-d capitalize opacity-50 text-clr-text-default"
+                >twitter</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="body-d capitalize opacity-50 text-clr-text-default"
+                >facebook</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="body-d capitalize opacity-50 text-clr-text-default"
+                >instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p
+        class="pt-[1.6rem] border-t border-clr-text-grey body-sm text-black-opaque"
+      >
+        &copy; Made by <a href="" class="text-bg-primary">Chika Sylvester</a> -
+        Powered by <a href="" class="text-bg-primary">Webflow</a>
+      </p>
+    </footer>
+    <script>
+      const menu = [
+        {
+          id: "1",
+          title: "How To Start Using Banko For Your Startup",
+          category: "app",
+          img: "images/image1.jpg",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi.",
+        },
+        {
+          id: "2",
+          title: "10 Things Nobody Told You About Banko",
+          img: "images/image2.jpg",
+          category: "technology",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi.",
+        },
+        {
+          id: "3",
+          title: "How To Start Using Banko For Your Startup",
+          img: "images/image3.jpg",
+          category: "app",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi.",
+        },
+        {
+          id: "4",
+          title: "10 Things Nobody Told You About Banko",
+          img: "images/image4.jpg",
+          category: "product",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi.",
+        },
+        {
+          id: "5",
+          title: "5 Principles Of Crypto Investing",
+          img: "images/image5.jpg",
+          category: "product",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi.",
+        },
+        {
+          id: "6",
+          title: "7 Things About Banko Friends Want To Know",
+          img: "images/image6.jpg",
+          category: "technology",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui accumsan sit amet nulla facilisi morbi.",
+        },
+      ];
+      const articlesContainer = document.querySelector(".articles-container");
+      const label = document.querySelector(".label-container");
+
+      const showLabels = function (arr) {
+        const cat = menu.map((items) => items.category);
+        const uniqueCat = new Set(cat);
+        const uniqueCatArr = [];
+
+        uniqueCat.forEach((item) => uniqueCatArr.push(item));
+        const displayLabels = uniqueCatArr
+          .map((item) => {
+            return `<p class="label label--b body-label cursor-pointer" data-id="${item}">
+            ${item}
+          </p>`;
+          })
+          .join("");
+
+        label.insertAdjacentHTML("beforeend", displayLabels);
+      };
+
+      const showItems = function (menu) {
+        const displayArticles = menu
+          .map((menuItem) => {
+            return `<div class="articles">
+            <img src="${menuItem.img}" alt="" class="mb-[2.4rem]" />
+            <h4 class="heading-4 mb-[0.8rem] leading-tight">
+              ${menuItem.title}
+            </h4>
+            <p class="body-d mb-[2.4rem]">
+              ${menuItem.description}
+            </p>
+            <div class="flex gap-4">
+              <p class="label label--b body-label">${menuItem.category}</p>
+            </div>
+            </div>`;
+          })
+          .join("");
+        articlesContainer.innerHTML = displayArticles;
+      };
+
+      window.addEventListener("DOMContentLoaded", function (e) {
+        showItems(menu);
+        showLabels(menu);
+      });
+
+      label.addEventListener("click", function (e) {
+        const clicked = e.target;
+        const category = clicked.dataset.id;
+        const filMenu = menu.filter((menuItem) => {
+          return menuItem.category === category;
+        });
+        if (category === "all") showItems(menu);
+        else showItems(filMenu);
+      });
+    </script>
+  </body>
+</html>
